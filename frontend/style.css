@@ -1,0 +1,103 @@
+:root {
+  --todo-intput-height: 3rem;
+  --todo-intput-font-size: 1rem;
+}
+body {
+  background-color: #f4f3e1;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+button#add-new-button {
+  height: var(--todo-intput-height);
+  font-size: var(--todo-intput-font-size);
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+}
+#illustrate {
+  font-size: 1.2rem
+}
+
+#diaries {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  gap: 0.5rem;
+}
+
+.diary-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.diary-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.diary-item summary > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.diary-date {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.diary-content {
+  margin: 0;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+.diary-content:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 0.5rem 0;
+}
+button#back-button,
+button#edit-button,
+button#save-button, 
+button#cancel-button
+{
+  height: 2rem;
+  font-size: var(--todo-intput-font-size);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+}
+#mode{
+  height: 3rem;
+  font-size: var(--todo-intput-font-size);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+
+}
+#mode-label, #current-mode{
+  font-size: var(--todo-intput-font-size);
+}
+#diary{
+  font-size: 1.5rem;
+}
+.diary-label,
+.diary-feeling{
+  height: 2rem;
+  width: 8rem;
+  font-size: 1.2rem;
+}
+.diary-content{
+  height: 30%;
+  width: 80%;
+  font-size: var(--todo-intput-font-size);
+}

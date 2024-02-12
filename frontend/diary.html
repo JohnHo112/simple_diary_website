@@ -1,0 +1,52 @@
+<!doctype html >
+<html lang="en">
+    <head>
+        <title>diary</title>
+        <script defer src="diary.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+        integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        ></script>
+    </head>
+
+    <body>
+        <div id="button-container">
+            <button id="back-button" onclick="location.href = 'index.html'"> BACK</button>
+            <span id="edit-mode">
+                <button id="edit-button">EDIT MODE</button>
+                <button id="save-button">SAVE</button>
+                <button id="cancel-button">CANCEL</button>
+            </span>
+            <span id="mode">
+                <span id="mode-label">MODE: </span>
+                <span id="current-mode"> e</span>
+            </span>
+        </div>
+        <div id="diary">
+            <div id="" class="diary-contaioner">
+                <span> Date: </span>
+                <input class="diary-date"></span>
+                </br>
+                <span> Tag: </span>
+                <select class="diary-label">
+                    <option value="default"> -- </option>
+                    <option value="Academic"> Academic </option>
+                    <option value="Social"> Social </option>
+                    <option value="Clubs"> Clubs </option>
+                </select>
+                <span> Feeling: </span>
+                <select class="diary-feeling">
+                    <option value="default"> -- </option>
+                    <option value="Happy"> Happy </option>
+                    <option value="Angry"> Angry </option>
+                    <option value="Sad"> Sad </option>
+                </select>
+            </div>
+            <p> Content: </p>
+            <textarea class="diary-content"> content </p>
+        </div>
+    </body>
+</html>
